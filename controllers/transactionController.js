@@ -46,7 +46,6 @@ exports.getTransactions = async (req, res) => {
   try {
     const query = { address };
 
-    // Simplified date range handling
     if (startDate && endDate) {
       const start = new Date(startDate);
       const end = new Date(endDate);
